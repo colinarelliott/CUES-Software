@@ -16,7 +16,9 @@ const Layout = (props) => (
                     {props.children}
                 </div>
                 <div className="col-3">
-                    <Sidebar/>
+                    <Sidebar name="Properties">
+                        <p>This is where properties will go</p>
+                    </Sidebar>
                 </div>
             </div>
         </div>
