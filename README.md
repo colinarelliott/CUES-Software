@@ -1,2 +1,2 @@
 # CUES-Software
-Management software for CUES operations
+Next.js application for management of Carleton University Event Support's day to day processes.
