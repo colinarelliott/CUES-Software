@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Nav from './Nav';
 import Sidebar from './Sidebar';
-//import AppBar from '@material-ui/core/AppBar'
+//import AppBar from '@material-ui/core/AppBar' ... https://material-ui.com/getting-started/usage/
 
 const Layout = (props) => (
     <div>
