@@ -1,6 +1,7 @@
 import Link from 'next/link'
 
 const Nav = () => (
+    <div>
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
         <Link href="/"><a className="navbar-brand"><b>CUES</b></a></Link>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,6 +24,10 @@ const Nav = () => (
             </ul>
         </div>
     </nav>
+    <style jsx>{`
+        
+    `}</style>
+    </div>
 );
 
 export default Nav;

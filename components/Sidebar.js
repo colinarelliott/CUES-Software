@@ -7,7 +7,7 @@ const Sidebar = (props) => (
             div {
                 height: 100%;
                 background-color: #ccc;
-                border-left: 3px solid black;
+                border-left: 1px solid #aaa;
                 padding: 5px;
             }
 

@@ -8,10 +8,13 @@ const Layout = (props) => (
             <title>CUES Software v1.0</title>
             <link rel="stylesheet" href="https://bootswatch.com/4/simplex/bootstrap.min.css"></link>
         </Head>
-        <body>
         <div className="container-fluid">
-            <Nav />
-            <div className="row">
+            <div className="row" id="nav">
+                <div className="col-12">
+                    <Nav />
+                </div>
+            </div>
+            <div className="row" id="content">
                 <div className="col-9">
                     {props.children}
                 </div>
@@ -22,7 +25,6 @@ const Layout = (props) => (
                 </div>
             </div>
         </div>
-        </body>
 
         <style jsx>{`
             .container-fluid {
@@ -30,6 +32,24 @@ const Layout = (props) => (
                 padding: 0px;
                 height: 100%;
             }
+
+            #nav {
+                height: 7vh;
+                padding: 0px;
+                margin: 0px;
+            }
+
+            #content {
+                height: 93vh;
+                padding: 0px;
+                margin: 0px;
+            }
+
+            .col-3, .col-9, .col-12 {
+                padding: 0px;
+                margin: 0px;
+            }
+
         `}</style>
 
         <style global jsx>{`
@@ -40,6 +60,8 @@ const Layout = (props) => (
             div#__next > div,
             div#__next > div > div {
                 height: 100%;
+                padding: 0px;
+                margin: 0px;
             }
         `}</style>
 
