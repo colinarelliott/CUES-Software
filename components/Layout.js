@@ -1,30 +1,46 @@
 import Head from 'next/head';
 import Nav from './Nav';
 import Sidebar from './Sidebar';
-//import AppBar from '@material-ui/core/AppBar' ... https://material-ui.com/getting-started/usage/
+import { createMuiTheme } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/styles';
+
+//Link to Material-UI: https://material-ui.com/getting-started/installation/
+
+const theme = createMuiTheme({
+    palette: {
+      primary: {
+        main: '#FF0000',
+      },
+      secondary: {
+        main: '#FFFFFF',
+      },
+      background: {
+        main: '#CCCCCC',
+      },
+    },
+  })
 
 const Layout = (props) => (
+    <ThemeProvider theme={theme}>
     <div>
         <Head>
             <title>CUES Software v1.0</title>
             <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"></link>
             <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+            <meta
+                name="viewport"
+                content="minimum-scale=1, initial-scale=1, width=device-width"
+            />
         </Head>
         <div>
             <div>
                 <div>
                     <Nav />
-                    
                 </div>
             </div>
             <div>
                 <div>
                     {props.children}
-                </div>
-                <div>
-                    <Sidebar name="Properties">
-                        <p>This is where properties will go</p>
-                    </Sidebar>
                 </div>
             </div>
         </div>
@@ -47,6 +63,7 @@ const Layout = (props) => (
         `}</style>
 
     </div>
+    </ThemeProvider>
 );
 
 export default Layout;
