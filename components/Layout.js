@@ -3,13 +3,16 @@ import Nav from './Nav';
 import Sidebar from './Sidebar';
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
+import { spacing } from '@material-ui/system'
 
 //Link to Material-UI: https://material-ui.com/getting-started/installation/
 
 const theme = createMuiTheme({
+    spacing: 5,
+
     palette: {
       primary: {
-        main: '#FF0000',
+        main: '#DD0000',
       },
       secondary: {
         main: '#FFF',
@@ -34,17 +37,12 @@ const Layout = (props) => (
         </Head>
         <div>
             <div>
-                <div>
-                    <Nav />
-                </div>
+                <Nav/>            
             </div>
             <div>
-                <div>
-                    {props.children}
-                </div>
+                {props.children}
             </div>
         </div>
-
         <style global jsx>{`
             html,
             body,
