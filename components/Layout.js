@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Nav from './Nav';
-import Sidebar from './Sidebar';
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 import { spacing } from '@material-ui/system'
@@ -39,7 +38,7 @@ const Layout = (props) => (
             <div>
                 <Nav/>            
             </div>
-            <div>
+            <div className="app-content">
                 {props.children}
             </div>
         </div>
@@ -51,12 +50,14 @@ const Layout = (props) => (
             div#__next > div,
             div#__next > div > div {
                 height: 100%;
-                padding: 0px;
-                margin: 0px;
             }
 
             * {
                 font-family: 'Roboto', sans-serif;
+            }
+
+            .app-content {
+                background-color: #EEE;
             }
         `}</style>
 

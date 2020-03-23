@@ -7,7 +7,6 @@ import HomeIcon from '@material-ui/icons/Home'
 import CalIcon from '@material-ui/icons/CalendarToday'
 import PplIcon from '@material-ui/icons/PeopleAlt'
 import EvtIcon from '@material-ui/icons/Assignment'
-import MenuIcon from '@material-ui/icons/Menu';
 import AppBar from '@material-ui/core/AppBar'
 
 const Nav = () => (
