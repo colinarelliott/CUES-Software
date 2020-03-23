@@ -12,10 +12,10 @@ const theme = createMuiTheme({
         main: '#FF0000',
       },
       secondary: {
-        main: '#FFFFFF',
+        main: '#FFF',
       },
       background: {
-        main: '#CCCCCC',
+        main: '#CCC',
       },
     },
   })
