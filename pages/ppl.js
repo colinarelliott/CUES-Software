@@ -6,6 +6,21 @@ import Fab from '@material-ui/core/Fab'
 import AddIcon from '@material-ui/icons/Add'
 import ButtonGroup from '@material-ui/core/ButtonGroup'
 import Button from '@material-ui/core/Button'
+import MUIDataTable from 'mui-datatables'
+
+const columns = ["Name", "Email", "Phone", "Role"]
+
+const data = [
+    ["Colin Elliott", "colin.elliott@carleton.ca", "613-555-5555", "Event Technician"],
+    ["John Rosefield", "john.rosefield@carleton.ca", "613-555-5555", "Audio Specialist"],
+    ["Kate Macdonnell", "katemacdonnell3@cunet.carleton.ca", "613-555-5555", "Supervisor"],
+    ["Larry Munn", "colin.elliott@carleton.ca", "613-555-5555", "Event Technician"],
+    ["Alex Pilkington", "colin.elliott@carleton.ca", "613-555-5555", "Production Coordinator"],
+];
+
+const options = {
+    filterType: 'checkbox'
+};
 
 const People = () => (
     <Layout>
@@ -18,7 +33,12 @@ const People = () => (
                             <Button>Clients</Button>
                             <Button>Contacts</Button>
                         </ButtonGroup>
-                        <h1>Lists of groups, editable, etc.</h1>
+                        <MUIDataTable
+                            title={"Staff"}
+                            data={data}
+                            columns={columns}
+                            options={options}
+                        />
                     </Paper>
                 </Grid>
             </Grid>
