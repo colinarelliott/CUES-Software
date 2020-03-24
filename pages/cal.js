@@ -7,8 +7,11 @@ const Calendar = () => (
     <Layout>
         <AppContainer>
             <Grid container spacing={3}>
-                <Grid item xs={12}>
-                    <Paper><h1>Calendar</h1></Paper>
+                <Grid item xs={10}>
+                    <Paper elevation={3}><h1>Calendar, maybe use https://fullcalendar.io/</h1></Paper>
+                </Grid>
+                <Grid item xs={2}>
+                    <Paper elevation={3}><h1>Options / View switching</h1></Paper>
                 </Grid>
             </Grid>
         </AppContainer>

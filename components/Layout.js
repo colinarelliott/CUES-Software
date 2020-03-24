@@ -34,14 +34,7 @@ const Layout = (props) => (
                 content="minimum-scale=1, initial-scale=1, width=device-width"
             />
         </Head>
-        <div>
-            <div>
-                <Nav/>            
-            </div>
-            <div className="app-content">
-                {props.children}
-            </div>
-        </div>
+        
         <style global jsx>{`
             html,
             body,
@@ -59,7 +52,36 @@ const Layout = (props) => (
             .app-content {
                 background-color: #EEE;
             }
+
+            h1, h2, h3, h4, h5, h6, p {
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                margin: 0px;
+            }
+
+            .fa-button {
+                margin: 30px;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+
+            .button-group {
+                margin: 15px;
+            }
         `}</style>
+
+        <div>
+            <div>
+                <Nav/>            
+            </div>
+            <div className="app-content">
+                {props.children}
+            </div>
+        </div>
+        
 
     </div>
     </ThemeProvider>
