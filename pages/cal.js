@@ -8,7 +8,9 @@ const Calendar = () => (
         <AppContainer>
             <Grid container spacing={3}>
                 <Grid item xs={10}>
-                    <Paper elevation={3}><h1>Calendar, maybe use https://fullcalendar.io/</h1></Paper>
+                    <Paper elevation={3}>
+                        <h1>Insert Calendar here</h1>
+                    </Paper>
                 </Grid>
                 <Grid item xs={2}>
                     <Paper elevation={3}><h1>Options / View switching</h1></Paper>
