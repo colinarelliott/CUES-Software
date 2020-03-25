@@ -19,7 +19,10 @@ const data = [
 ];
 
 const options = {
-    filterType: 'checkbox'
+    filterType: 'checkbox',
+    elevation: '0',
+    selectableRows: 'none',
+    responsive: 'scrollMaxHeight'
 };
 
 const Inventory = () => (

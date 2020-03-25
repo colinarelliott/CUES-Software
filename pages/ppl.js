@@ -19,7 +19,8 @@ const data = [
 ];
 
 const options = {
-    filterType: 'checkbox'
+    filterType: 'checkbox',
+    elevation: '0'
 };
 
 const People = () => (
@@ -38,7 +39,7 @@ const People = () => (
                             data={data}
                             columns={columns}
                             options={options}
-                        />
+                            />
                     </Paper>
                 </Grid>
             </Grid>
